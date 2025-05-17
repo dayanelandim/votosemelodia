@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obrigado!</title>
+  <style>
+    body {
+      background-color: #f8f8f4;
+      color: #3e3e3e;
+      font-family: 'Georgia', serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    h1 {
+      color: #5a5a5a;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    a {
+      margin-top: 2rem;
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      background-color: #b9b9a7;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+    }
+    a:hover {
+      background-color: #9f9f8b;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mensagem enviada com sucesso!</h1>
+  <p>Obrigado por entrar em contato. Em breve retornaremos com todo carinho e atenção que o seu momento merece.</p>
+  <a href="index.html">Voltar para o site</a>
+</body>
+</html>
