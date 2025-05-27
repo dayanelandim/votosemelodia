@@ -1,14 +1,212 @@
-<style>
-  body {
-    margin: 0;
-    font-size: 1.5em; /* Reduzido em 50% */
-    font-family: 'Lora', serif;
-    background-image: url('fundo-flores2.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    color: #000;
-    line-height: 1.6;
-    backdrop-filter: brightness(0.95) saturate(0.95);
-  }
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Votos & Melodia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Lora:wght@400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-size: 2em; /* Aumento da fonte */
+      font-family: 'Lora', serif;
+      background-image: url('fundo-flores2.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: #000; /* Letras 100% escuras */
+      line-height: 1.6;
+      backdrop-filter: brightness(0.95) saturate(0.95);
+    }
+    header {
+      background-color: rgba(248, 246, 242, 0.9);
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #6b4e71;
+      font-family: 'Cinzel', serif;
+    }
+    header p {
+      font-style: italic;
+      color: #6b4e71;
+    }
+    section {
+      padding: 2rem 1.5rem;
+      max-width: 850px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.88);
+      border-radius: 14px;
+    }
+    h2 {
+      color: #caa4d0;
+      font-family: 'Playfair Display', serif;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.5rem;
+      margin-top: 2rem;
+    }
+    .investimento, .formas-pagamento {
+      background-color: #f8f6f2;
+      padding: 1rem;
+      border-left: 5px solid #b8c3a4;
+      border-radius: 8px;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #999;
+    }
+    form {
+      background-color: #f4d9df;
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+      font-family: 'Playfair Display', serif;
+      color: #6b4e71;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.3rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-family: 'Lora', serif;
+    }
+    button {
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      background-color: #6b4e71;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: 'Cinzel', serif;
+    }
+    button:hover {
+      background-color: #543a5a;
+    }
+    .whatsapp {
+      margin-top: 1.5rem;
+      font-size: 1.1rem;
+      font-style: italic;
+      color: #6b4e71;
+    }
+    .whatsapp a {
+      color: #6b4e71;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Votos & Melodia</h1>
+    <p>Trilha sonora para o momento mais inesquecível da sua vida.</p>
+  </header>
+
+  <section>
+    <p>Imagine sua cerimônia de casamento embalada por canções tocadas com delicadeza e emoção. No <strong>Votos & Melodia</strong>, cada acorde é pensado para tocar o coração. Nosso objetivo é tornar o seu "sim" ainda mais inesquecível, com um repertório personalizado e uma formação musical que se adapta ao seu sonho.</p>
+
+    <h2>Sobre Mim</h2>
+    <p>Oi! Eu sou a <strong>Dayane Landim</strong>, cantora apaixonada por transformar emoções em melodia. Desde cedo envolvida com a música, encontrei no universo dos casamentos um lugar onde posso colocar todo meu coração em cada apresentação. Amo estar presente em momentos únicos como esse — leve, sensível e com um toque de poesia sonora.</p>
+
+    <h2>Formações Musicais</h2>
+    <ul>
+      <li><strong>Duo (base):</strong> Voz feminina e violão</li>
+      <li><strong>Trio:</strong> Voz, violão e violino</li>
+      <li><strong>Quarteto:</strong> Violão, piano, voz feminina e voz masculina</li>
+    </ul>
+
+    <h2>Repertório da Cerimônia</h2>
+    <ul>
+      <li>Entrada dos pais e padrinhos</li>
+      <li>Entrada do noivo</li>
+      <li>Florista</li>
+      <li>Entrada da noiva</li>
+      <li>Entrada das alianças</li>
+      <li>Assinaturas e cumprimentos</li>
+      <li>Saída dos noivos</li>
+    </ul>
+
+    <h2>Investimento</h2>
+    <div class="investimento">
+      <p><strong>Duo (formação base):</strong> R$ 1.200,00</p>
+      <p><strong>Cada músico ou instrumento adicional:</strong> R$ 300,00</p>
+      <p><strong>Músicas adicionais ao repertório:</strong> R$ 50,00 cada</p>
+    </div>
+
+    <h2>Formas de Pagamento</h2>
+    <div class="formas-pagamento">
+      <p>Boleto, Pix, Débito ou Crédito</p>
+    </div>
+
+    <h2>Simule seu Orçamento</h2>
+    <form id="form-orcamento">
+      <label for="formacao">Formação musical:</label>
+      <select id="formacao" name="formacao">
+        <option value="duo">Duo</option>
+        <option value="trio">Trio</option>
+        <option value="quarteto">Quarteto</option>
+      </select>
+
+      <label for="musicasExtras">Quantas músicas extras?</label>
+      <input type="number" id="musicasExtras" name="musicasExtras" min="0" value="0"/>
+
+      <button type="button" onclick="calcularOrcamento()">Calcular</button>
+      <p id="resultado"></p>
+    </form>
+
+    <h2>Entre em Contato</h2>
+    <form action="https://formsubmit.co/votosemelodia@gmail.com" method="POST">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="name" required />
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="message" rows="4" required></textarea>
+
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="obrigado.html">
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div class="whatsapp">
+      Ou se preferir, fale diretamente comigo pelo WhatsApp:<br>
+      <a href="https://wa.me/5516981117029" target="_blank">(16) 98111-7029</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Com carinho, para o dia mais especial da sua vida.</p>
+  </footer>
+
+  <script>
+    function calcularOrcamento() {
+      const formacao = document.getElementById('formacao').value;
+      const musicasExtras = parseInt(document.getElementById('musicasExtras').value);
+
+      let valor = 1200;
+      if (formacao === 'trio') valor += 300;
+      if (formacao === 'quarteto') valor += 600;
+      valor += musicasExtras * 50;
+
+      document.getElementById('resultado').innerText = `Valor estimado: R$ ${valor.toFixed(2)}`;
+    }
+  </script>
+</body>
+</html>
