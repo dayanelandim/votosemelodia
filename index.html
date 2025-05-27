@@ -4,18 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Votos & Melodia</title>
-  <!-- Fontes elegantes -->
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Lora:wght@400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
+      font-size: 2em; /* Aumento da fonte */
       font-family: 'Lora', serif;
       background-image: url('fundo-flores2.jpg');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
       background-repeat: no-repeat;
-      color: #3e3e3e;
+      color: #000; /* Letras 100% escuras */
       line-height: 1.6;
       backdrop-filter: brightness(0.95) saturate(0.95);
     }
@@ -142,8 +142,8 @@
 
     <h2>Investimento</h2>
     <div class="investimento">
-      <p><strong>Duo (formação base):</strong> R$ 1.500,00</p>
-      <p><strong>Cada músico ou instrumento adicional:</strong> R$ 500,00</p>
+      <p><strong>Duo (formação base):</strong> R$ 1.200,00</p>
+      <p><strong>Cada músico ou instrumento adicional:</strong> R$ 300,00</p>
       <p><strong>Músicas adicionais ao repertório:</strong> R$ 50,00 cada</p>
     </div>
 
@@ -180,7 +180,7 @@
       <textarea id="mensagem" name="message" rows="4" required></textarea>
 
       <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+      <input type="hidden" name="_next" value="obrigado.html">
 
       <button type="submit">Enviar</button>
     </form>
@@ -200,9 +200,9 @@
       const formacao = document.getElementById('formacao').value;
       const musicasExtras = parseInt(document.getElementById('musicasExtras').value);
 
-      let valor = 1500;
-      if (formacao === 'trio') valor += 500;
-      if (formacao === 'quarteto') valor += 1000;
+      let valor = 1200;
+      if (formacao === 'trio') valor += 300;
+      if (formacao === 'quarteto') valor += 600;
       valor += musicasExtras * 50;
 
       document.getElementById('resultado').innerText = `Valor estimado: R$ ${valor.toFixed(2)}`;
